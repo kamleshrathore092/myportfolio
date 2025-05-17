@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamlesh Rathore | Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --bg-medium: #1e293b;
+      --text-light: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #14b8a6;
+      --highlight: #38bdf8;
+      --hover: #facc15;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(120deg, var(--bg-dark), var(--bg-medium));
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background: var(--bg-medium);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--highlight);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--hover);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      flex: 1 1 calc(33.333% - 1rem);
+    }
+
+    .card {
+      background: var(--bg-medium);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .icons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      font-size: 1.8rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .icons a {
+      color: var(--highlight);
+      transition: color 0.3s;
+    }
+
+    .icons a:hover {
+      color: var(--hover);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--bg-dark);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: var(--accent);
+      color: var(--bg-dark);
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background-color: #0f766e;
+      color: var(--text-light);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      .gallery img {
+        flex: 1 1 calc(50% - 1rem);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        flex: 1 1 100%;
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+   <header>
+    <img src="pp.jpg" alt="Kamlesh Rathore">
+    <h1>Kamlesh Rathore</h1>
+    <p>Data Analyst & Web Scraper | Data Visualization Specialist</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I'm a results-driven Data Analyst & Web Scraper skilled in Python, SQL, Power BI, Plotly, and Seaborn.
+      I specialize in extracting, processing, and visualizing data to drive business decisions.
+      Certified by IBM and DigiSkills. I transform complex data into strategic insights through compelling dashboards.
+    </p>
+    <div class="gallery">
+      <img src="1.jpeg" alt="Dashboard 1">
+      <img src="2.jpeg" alt="Dashboard 2">
+      <img src="3.jpeg" alt="Dashboard 3">
+    </div>
+    <a href="CV.pdf" class="button" download>Download Resume</a>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>SpaceX Launch Analysis</h3>
+      <p>Performed EDA and visualizations using Folium and Dash.</p>
+      <a href="https://github.com/kamleshrathore092/SpaceX-Launch-Analysis" target="_blank" title="GitHub repository"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="card">
+      <h3>E-Commerce Price Tracker</h3>
+      <p>Scraped product data from Amazon, stored in SQL/CSV, and visualized pricing trends.</p>
+    </div>
+  </section>
+
+  <section id="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Freelance Data Analyst & Web Scraper</h3>
+      <p>Self-employed (2025 – Present)</p>
+      <ul>
+        <li>Built real-time scraping tools for e-commerce & finance platforms</li>
+        <li>Designed dashboards using Power BI and Dash</li>
+        <li>Performed SQL-based reporting and data automation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li>IBM Data Science Professional Certificate</li>
+      <li>IBM Data Analyst Professional Certificate</li>
+      <li>DigiSkills – Data Analytics & BI</li>
+      <li>ITU-DTC – Introduction to Data Science</li>
+      <li>DigiSkills – Freelancing</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Feel free to connect with me through the platforms below:</p>
+    <div class="icons">
+      <a href="mailto:rkbhoorani092@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/kamlesh-rathore-9bb4b426b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/kamleshrathore092" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/923170303722" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.credly.com/users/kamlesh-meghwar" target="_blank" title="Credly"><i class="fas fa-certificate"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kamlesh Rathore — All Rights Reserved
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
