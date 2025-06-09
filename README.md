@@ -5,7 +5,7 @@ This responsive web portfolio showcases my skills, projects, certifications, and
 
 ## 🔗 Live Preview
 
-Check out the live site here (if hosted):  
+Check out the live site here:  
 [https://kamleshrathore092.github.io/myportfolio/](#)  
 
 ---
