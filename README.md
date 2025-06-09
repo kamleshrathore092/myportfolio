@@ -6,8 +6,7 @@ This responsive web portfolio showcases my skills, projects, certifications, and
 ## 🔗 Live Preview
 
 Check out the live site here (if hosted):  
-[https://yourusername.github.io/myportfolio](#)  
-*(Replace the link with your actual GitHub Pages URL if you deploy it)*
+[https://kamleshrathore092.github.io/myportfolio/](#)  
 
 ---
 
